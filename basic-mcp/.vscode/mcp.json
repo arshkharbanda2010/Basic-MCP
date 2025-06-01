@@ -1,0 +1,22 @@
+{
+    "servers": {
+        "monkey": {
+            "command": "${input:command}",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "jamesmontemagno/monkeymcp"
+            ],
+            "env": {},
+            "type": "stdio"
+        }
+    },
+    "inputs": [
+        {
+            "id": "command",
+            "type": "promptString",
+            "description": "Command"
+        }
+    ]
+}
